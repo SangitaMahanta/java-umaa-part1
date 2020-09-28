@@ -1,6 +1,6 @@
-package org.example;
+package org.methods.instance;
 
-public class Calculator {
+public class CalculatorDemo {
     public int sum(int x, int y) // non-static methode
     {
         int result = x + y;
