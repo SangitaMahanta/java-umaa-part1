@@ -5,40 +5,35 @@ import java.util.Scanner;
 public class BookDetails {
     private String bookTitle;
     private String author;
-    private String bookPublisherName;
+    private String bookPublisher;
     private int numberOfCopy;
 
-//    public String getBookTitle() {
-//        return bookTitle;
-//    }
-//
-//    public void setBookTitle(String bookTitle) {
-//        this.bookTitle = bookTitle;
-//    }
-//
-//    public String getAuthor() {
-//        return author;
-//    }
-//
-//    public void setAuthor(String author) {
-//        this.author = author;
-//    }
-//
-//    public String getBookPublisherName() {
-//        return bookPublisherName;
-//    }
-//
-//    public void setBookPublisherName(String bookPublisherName) {
-//        this.bookPublisherName = bookPublisherName;
-//    }
-//
-//    public int getNumberOfCopy() {
-//        return numberOfCopy;
-//    }
-//
-//    public void setNumberOfCopy(int numberOfCopy) {
-//        this.numberOfCopy = numberOfCopy;
-//    }
+    public BookDetails(String bookTitle,String author,String bookPublisher,int numberOfCopy){
+        this.bookTitle=bookTitle;
+        this.author=author;
+        this.bookPublisher=bookPublisher;
+        this.numberOfCopy=numberOfCopy;
+
+    }
+
+    public String getBookTitle() {
+        return bookTitle;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+
+    public String getBookPublisherName() {
+        return bookPublisher;
+    }
+
+
+    public int getNumberOfCopy() {
+        return numberOfCopy;
+    }
+
 
     public void getBookDetails() {
         Scanner sc = new Scanner(System.in);
@@ -49,16 +44,16 @@ public class BookDetails {
         author = sc.nextLine();
 
         System.out.println("Enter Book PublisherName : ");
-        bookPublisherName = sc.nextLine();
+        bookPublisher = sc.nextLine();
 
         System.out.println("Enter  Numbers of Available Books :  ");
         numberOfCopy = sc.nextInt();
     }
 
-    public void purchase(String bookName, String authorName, int numberOfcopy, String publisherName) {
+    public void purchase(String bookName, String authorName, int numberOfcopy, String publisher) {
         if (bookTitle.equals(bookName) && author.equals(authorName) &&
-                bookPublisherName.equals(publisherName) &&
-                this.numberOfCopy == numberOfcopy) {
+                bookPublisher.equals(publisher) )
+             {
             if (this.numberOfCopy > numberOfcopy) {
                 System.out.println("The Book is Available !! You can purchase...");
                 this.numberOfCopy -= numberOfcopy;
