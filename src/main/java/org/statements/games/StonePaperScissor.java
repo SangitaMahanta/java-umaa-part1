@@ -10,10 +10,14 @@ public class StonePaperScissor {
     public static int userPoint;
 
     public static void main(String[] args) {
-        System.out.println("\n***********WELCOME TO OUR ROCK,PAPER AND SCISSOR GAME*************");
+        System.out.println("\n***********WELCOME TO OUR STONE,PAPER AND SCISSOR GAME*************");
         Random rand=new Random();
-
         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Your Name : ");
+        String userName=sc.nextLine();
+        System.out.println();
+        System.out.println(userName+" You can play 10 times \n");
+
         while (i <= 10) {
             System.out.println("The Choice are Available :- ");
             System.out.println("\t\t\t\t\t\t 1. STONE ");
@@ -107,12 +111,14 @@ public class StonePaperScissor {
             System.out.println("Computer wins and you loose the game!!!...");
         }
         else if (computerPoint<userPoint){
-            System.out.println("You wins and computer loose the game!!!...");
+            System.out.println(userName+" You wins and computer loose the game!!!...");
         }
-        else
+        else if(computerPoint==userPoint){
+            System.out.println(" THE GAME IS TIE ");
+        }else
             System.out.println();
 
-        System.out.println("Yours points is  "+userPoint+" and Computer points is "+computerPoint);
+        System.out.println(userName+" Yours points is  "+userPoint+" and Computer points is "+computerPoint);
 
 
     }
