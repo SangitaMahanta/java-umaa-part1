@@ -13,6 +13,7 @@ public class BookDetails {
         this.author=author;
         this.bookPublisher=bookPublisher;
         this.numberOfCopy=numberOfCopy;
+        //within constuctor
 
     }
 
