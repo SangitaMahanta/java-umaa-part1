@@ -16,7 +16,8 @@ public class Student {
 
     Student(String name, int rollNo, String className,String address)
     {
-        this(name);
+        this(name);//this constructor
+        // it Always first line declaration
         this.name = name;
         this.rollNo = rollNo;
         this.className = className;
