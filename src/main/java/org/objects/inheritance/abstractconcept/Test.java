@@ -4,6 +4,8 @@ public class Test {
     public static void main(String[] args) {
 //        Parent parent=new Parent();// abstract class have no object
         Parent p = new Child();
+//        Child c=new Child();
+//        c.m3();
 //      m2(10); // this m2() direct invoke the parent class m2()
         p.m1();
     }
@@ -42,6 +44,7 @@ public class Test {
             // this non-static block execute during at the time of object creation
             int p = m2(10);
             System.out.println(p);
+            System.out.println("--------------------------------------------------");
         }
 
 
@@ -54,4 +57,3 @@ class GrandParent {
         System.out.println("In grandparent class");
     }
 }
-
