@@ -7,5 +7,6 @@ public class B {
         System.out.println(a.getI());
         System.out.println(a.j);
         System.out.println(a.k); // why this is accessible?
+        System.out.println(a.y);
     }
 }

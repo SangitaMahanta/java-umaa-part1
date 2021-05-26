@@ -23,7 +23,8 @@ public class AssignmentIfElseIf {
        else if (day.equals("FRI")) {
            System.out.println(" It is a Friday");
        }
-       else if (day.equals("SAT")||day.equals("SUN")) {
+       else if (day.equals("SAT")||day.equals("SUN"))
+       {
            System.out.println(" It is a Weekend-1");
            System.out.println(" It is a Weekend-2");
        }

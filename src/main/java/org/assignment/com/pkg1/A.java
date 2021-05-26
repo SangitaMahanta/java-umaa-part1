@@ -4,6 +4,7 @@ public class A {
     private int i = 10;
     public int j = 100;
     int k = 50;
+    protected int y=7;
 
     public int getI() {
         return i;
